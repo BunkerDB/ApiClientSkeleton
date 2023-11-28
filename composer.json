@@ -1,30 +1,36 @@
 {
-    "name": "dabreu/api-client-skeleton",
-    "description": "Basic API Client/Service Skeleton",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Diego Abreu",
-            "email": "dabreu@adinet.com.uy"
-        }
-    ],
-    "license": "MIT",
-    "require": {
-        "php": ">=7.1",
-        "psr/cache": "^3.0.0",
-        "psr/simple-cache": "^3.0.0",
-        "cache/adapter-common": "^1.1",
-        "ext-json": "*",
-        "ext-curl": "*",
-        "monolog/monolog": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "CSApi\\": "./",
-            "CSApi\\Cache\\Adapter\\": "Cache/",
-            "CSApi\\Cache\\": "Cache/",
-            "CSApi\\Objects\\": "Objects/",
-            "CSApi\\Adapters\\": "Adapters/"
-        }
+  "name": "dabreu/api-client-skeleton",
+  "description": "Basic API Client/Service Skeleton",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Diego Abreu",
+      "email": "dabreu@adinet.com.uy"
     }
+  ],
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/BunkerDB/adapter-common"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "psr/cache": "2.0.0",
+    "psr/simple-cache": "2.0.0",
+    "cache/adapter-common": "dev-master",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "monolog/monolog": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CSApi\\": "./",
+      "CSApi\\Cache\\Adapter\\": "Cache/",
+      "CSApi\\Cache\\": "Cache/",
+      "CSApi\\Objects\\": "Objects/",
+      "CSApi\\Adapters\\": "Adapters/"
+    }
+  }
 }
