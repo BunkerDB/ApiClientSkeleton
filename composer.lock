@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea99dbe9a8b49b38053f9dbc81e4805b",
+    "content-hash": "121262a88e3e50bc84cc501bf5547db3",
     "packages": [
         {
-            "name": "cache/adapter-common",
-            "version": "dev-master",
+            "name": "bunkerdb/adapter-common",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BunkerDB/adapter-common.git",
-                "reference": "650f318cf49a6ec9ac8a638c41e5befacd0cd452"
+                "reference": "477773c92d0c0f14e5a44e464cb5ebda77756a62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BunkerDB/adapter-common/zipball/650f318cf49a6ec9ac8a638c41e5befacd0cd452",
-                "reference": "650f318cf49a6ec9ac8a638c41e5befacd0cd452",
+                "url": "https://api.github.com/repos/BunkerDB/adapter-common/zipball/477773c92d0c0f14e5a44e464cb5ebda77756a62",
+                "reference": "477773c92d0c0f14e5a44e464cb5ebda77756a62",
                 "shasum": ""
             },
             "require": {
@@ -31,7 +31,6 @@
                 "cache/integration-tests": "^0.17",
                 "phpunit/phpunit": "^7.5.20 || ^9.5.10"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -74,9 +73,9 @@
                 "tag"
             ],
             "support": {
-                "source": "https://github.com/BunkerDB/adapter-common/tree/master"
+                "source": "https://github.com/BunkerDB/adapter-common/tree/1.0.0"
             },
-            "time": "2023-11-28T21:10:09+00:00"
+            "time": "2023-11-28T22:19:49+00:00"
         },
         {
             "name": "cache/tag-interop",
@@ -392,9 +391,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "cache/adapter-common": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
