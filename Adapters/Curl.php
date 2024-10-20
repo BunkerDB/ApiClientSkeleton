@@ -49,12 +49,13 @@ class Curl implements IAdapter
      * @param $params
      * @return array
      */
-    private function getOptions($uri, $method, $extraHeaders, $params){
+    private function getOptions($uri, $method, $extraHeaders, $params)
+    {
         $headers = [
             "Content-Type: application/json"
         ];
 
-        if (is_array($extraHeaders) && !empty($extraHeaders)){
+        if (is_array($extraHeaders) && !empty($extraHeaders)) {
             $headers = $this->mergeHeaders($headers, $extraHeaders);
         }
 
@@ -70,7 +71,7 @@ class Curl implements IAdapter
         ];
 
         if (is_array($this->options) && !empty($this->options)) {
-            $options = array_replace($this->options, $options);
+            $options = array_replace($options, $this->options);
         }
 
         if (!empty($params)) {
@@ -126,7 +127,8 @@ class Curl implements IAdapter
      * @param $extra
      * @return array
      */
-    private function mergeHeaders($headers, $extra){
+    private function mergeHeaders($headers, $extra)
+    {
         $ret = [];
         foreach ([$headers, $extra] as $entries) {
             foreach ($entries as $k => $header) {
@@ -146,7 +148,8 @@ class Curl implements IAdapter
      * @param string $error
      * @return $this
      */
-    private function setErrorMsg(?string $error): Curl{
+    private function setErrorMsg(?string $error): Curl
+    {
         $this->errorMsg = $error;
         return $this;
     }
@@ -155,7 +158,8 @@ class Curl implements IAdapter
      * @param int $error
      * @return $this
      */
-    private function setErrorCode(int $error): Curl{
+    private function setErrorCode(int $error): Curl
+    {
         $this->errorCode = $error;
         return $this;
     }
